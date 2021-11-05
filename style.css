@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%;
+    font-family:    "Maiandra GD", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 100%;
+    background-color: #ff0000;
+    text-align: center;
+}
+
+.container > ul li {
+    color: rgba(255, 255, 255, 0.77);
+    padding: 1% 2%;
+    display: inline-flex;
+    border:2px #b20101;
+    border-style: none solid none none;
+    transform: skewX(-25deg);
+    transition: background-color 0.4s ease;
+}
+
+.container > ul li:last-child {
+    border-style: none;
+}
+
+.container > ul li:first-child {
+    display: none;
+}
+
+.container > ul li:hover{
+    background-color: #ffd1da;
+    color: lightblue;
+}
+
+.container > ul li a {
+    color: rgba(255, 255, 255, 0.77);
+    text-decoration-line: none;
+}
+
+.container > ul li a:hover {
+    text-decoration-line: underline;
+}
+
+/**
+* responsive
+ */
+@media screen and (max-width: 1050px) {
+    header {
+        width: 180px;
+    }
+
+
+
+    .container > ul li {
+        border-style: none;
+        display: flex;
+        text-align:center ;
+        flex-direction: column ;
+    }
+
+    .container > ul li {
+        border-style: none;
+    }
+
+    .container > ul li:first-child {
+        display: block;
+    }
+
+}
